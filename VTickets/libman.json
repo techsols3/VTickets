@@ -35,16 +35,12 @@
       "destination": "wwwroot/lib/slick-carousel/"
     },
     {
-      "library": "ckeditor@4.17.1",
-      "destination": "wwwroot/lib/ckeditor/",
-      "files": [
-        "ckeditor.js",
-        "ckeditor.min.js"
-      ]
-    },
-    {
       "library": "bootstrap-icons@1.7.2",
       "destination": "wwwroot/lib/bootstrap-icons/"
+    },
+    {
+      "library": "ckeditor@4.17.1",
+      "destination": "wwwroot/lib/ckeditor/"
     }
   ]
 }

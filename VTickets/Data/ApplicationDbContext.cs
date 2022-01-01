@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using VTickets.Models;
 
 namespace VTickets.Data
 {
@@ -12,5 +10,12 @@ namespace VTickets.Data
             : base(options)
         {
         }
+
+        public DbSet<Actor> Actors { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<ActorMovie> ActorsMovies { get; set; }
+        public DbSet<Cinema> Cinemas { get; set; }
+        public DbSet<Producer> Producers { get; set; }
+
     }
 }
