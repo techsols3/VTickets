@@ -109,15 +109,15 @@
                                 <p class="card-text ">
                                     @if (DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
                                     {
-                                        <span class="badge bg-success text-white px-3 py-1">AVAILABLE</span>
+                                        <span class="badge badge-pill bg-success text-white px-3 py-1">AVAILABLE</span>
                                     }
                                     else if (DateTime.Now > item.EndDate)
                                     {
-                                        <span class="badge bg-danger text-white px-3 py-1">EXPIRED</span>
+                                        <span class="badge badge-pill bg-danger text-white px-3 py-1">EXPIRED</span>
                                     }
                                     else
                                     {
-                                        <span class="badge bg-primary text-white px-3 py-1">UPCOMING</span>
+                                        <span class="badge badge-pill bg-primary text-white px-3 py-1">UPCOMING</span>
                                     }
                                 </p>
                             </div>
