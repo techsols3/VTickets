@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" type="text/css" href="~/lib/datatables/css/dataTables.bootstrap4.min.css" />
-
+    <link href="~/lib/animate.css/animate.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="~/css/site.css" />
 </head>
@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Movies" asp-action="Index">VTickets</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                         aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         @*@if(User.Identity.IsAuthenticated && User.IsInRole("Admin")){*@
-                      
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,12 +52,12 @@
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0" asp-controller="Movies" asp-action="Filter">
-                        <input name="searchString" type="text" class="form-control" placeholder="Search for a movie..." 
+                        <input name="searchString" type="text" class="form-control" placeholder="Search for a movie..."
                                aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
                     </form>
 
-<partial name="_LoginPartial" />
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>

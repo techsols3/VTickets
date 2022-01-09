@@ -7,10 +7,6 @@
       "destination": "wwwroot/lib/font-awesome/"
     },
     {
-      "library": "bootstrap@4.6.1",
-      "destination": "wwwroot/lib/bootstrap/"
-    },
-    {
       "library": "bootswatch@4.6.1",
       "destination": "wwwroot/lib/bootswatch/"
     },
@@ -41,6 +37,10 @@
     {
       "library": "ckeditor@4.17.1",
       "destination": "wwwroot/lib/ckeditor/"
+    },
+    {
+      "library": "bootstrap@4.6.1",
+      "destination": "wwwroot/lib/bootstrap/"
     }
   ]
 }
